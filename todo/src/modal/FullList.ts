@@ -13,6 +13,7 @@ export default class FullList implements List {
 
     static instance : FullList = new FullList();
 
+    // use private to make Singleton
     private constructor(private _list : ListItem[] = []){}
 
     get list() : ListItem[] {

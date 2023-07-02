@@ -10,7 +10,8 @@ export default class ListTemplate implements DOMList {
   ul: HTMLUListElement;
 
   static instance: ListTemplate = new ListTemplate();
-  
+
+  // use private to make Singleton
   private constructor() {
     this.ul = document.getElementById("listItems") as HTMLUListElement;
   }
